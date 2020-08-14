@@ -1,0 +1,84 @@
+<div class="col-md-5 border-right">
+  <form class="my-2 form-inline" action="/savedItems" method="POST" enctype="multipart/form-data">
+    <div class="container my-4">
+      <input type="hidden" name="_id">
+        <div class="col">
+          <h4 class="display4 text-capitalize">Design your ad</h4>
+          <p>To learn more about this ad, see this <a href="#">link</a>.</p>
+        </div>
+
+        <div class="col my-2">
+          <strong>Website Clicks</strong>
+          <p>
+            <small>Send people to important sections of your website, or get them to take specific actions such as buying a product.</small>
+          </p>
+        </div>
+
+        <div class="col my-2">
+          <strong>Advertiser Info</strong>
+          <p>
+            <small>Specify the Facebook page that your ads will be associated with.</small>
+          </p>
+        </div>
+
+        <div class="col my-2">
+          <h4>Logo</h4>
+          <input type="file" id="logo" required>
+        </div>
+
+        <div class="col my-2 form-group">
+          <label for="pageHeader"><strong>Page Name</strong></label>
+        </div>
+
+        <div class="col my-2">
+          <input type="text" name="pageHeader" id="pageHeader" class="form-control" placeholder="Enter Page Name" style="width: 100%;" required>
+        </div>
+
+        <div class="col my-2">
+          <strong>Message</strong>
+          <p>Grab interest with more info about what you're advertising. Keep it short - we recommend 90 characters or less.</p>
+        </div>
+        <div class="col">
+          <textarea name="message" placeholder="Enter Message" class="form-control col" rows="8" style="width: 100%;"></textarea>
+        </div>
+
+        <div class="col my-2">
+          <h4>Banner</h4>
+          <input type="file" id="banner" required>
+        </div>
+
+        <div class="col my-2 form-group">
+          <label for="headline"><strong>Link Headline</strong></label>
+        </div>
+
+        <div class="col my-2">
+          <input type="text" name="headLine" id="headLine" class="form-control" placeholder="Enter Headline" style="width: 100%;" required>
+        </div>
+
+        <div class="col my-2 form-group">
+          <label for="description"><strong>Link Description</strong></label>
+        </div>
+
+        <div class="col my-2">
+          <input type="text" name="description" id="description" class="form-control" placeholder="Enter Description" style="width: 100%;" required>
+        </div>
+
+        <div class="col my-2 form-group">
+          <label for="caption"><strong>Link Caption</strong></label>
+        </div>
+
+        <div class="col my-2">
+          <input type="text" name="caption" id="caption" class="form-control" placeholder="Enter Caption" style="width: 100%;" required>
+        </div>
+
+    </div>
+
+    <div class="container my-4">
+      <div class="row">
+        <div class="col">
+          <button type="submit" class="btn btn-md btn-info float-right" name="button">Save Mockup</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

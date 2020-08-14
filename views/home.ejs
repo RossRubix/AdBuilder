@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link type="text/css" href="/css/app.css" />
+    <meta charset="utf-8">
+
+    <!-- add to document <head> -->
+    <link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">
+    <link href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css" rel="stylesheet">
+
+
+
+    <title>AdBuilder</title>
+  </head>
+  <body class="bg-light">
+    <div class="container-fluid">
+      <%- include('../template/nav') -%>
+      <input type="file" id="logo" >
+    </div>
+
+    <!-- add before </body> -->
+    <script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
+    <script src="https://unpkg.com/filepond-plugin-image-transform/dist/filepond-plugin-image-transform.js"></script>
+    <script src="https://unpkg.com/filepond-plugin-image-resize/dist/filepond-plugin-image-resize.js"></script>
+    <script src="https://unpkg.com/filepond/dist/filepond.js"></script>
+
+    <script>
+      FilePond.registerPlugin(
+      FilePondPluginImagePreview,
+      FilePondPluginImageTransform,
+      FilePondPluginImageResize);
+      // get a reference to the input element
+      const inputElement = document.querySelector('input[id="logo"]');
+
+      // create a FilePond instance at the input element location
+      const pond = FilePond.create( inputElement );
+
+      // attributes have been set to pond options
+      console.log(pond.id);  // 'filepond'
+      console.log(pond.maxFiles); // 10
+      console.log(pond.required); // true
+    </script>
+  </body>
+</html>

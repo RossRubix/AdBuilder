@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <meta charset="utf-8">
+
+    <!-- add to document <head> -->
+    <link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">
+    <link href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css" rel="stylesheet">
+
+    <link type="text/css" href="/css/app.css" />
+    <style>
+      .select ::after {
+        right: 15px;
+      }
+    </style>
+    <title>AdBuilder</title>
+  </head>
+  <body class="bg-light">
+    <div class="container-fluid" id="wrapper">
+      <div class="row">
+        <div class="col-md-6 form-content my-4">
+          <form action="/" method="POST" id="adsForm">
+            <div class="container">
+                <div class="col">
+                  <h2 class="text-capitalize">Design Ad</h2>
+                  <p>This tool is for internal and test purposes only.</p>
+                </div>
+
+                <div class="col my-4">
+                  <h4>Ad Type</h4>
+                  <select class="form-control form-control-lg px-3" style="border-radius: 25px;">
+                    <option>Select an Ad type</option>
+                    <option>Select an Ad type</option>
+                    <option>Select an Ad type</option>
+                  </select>
+                </div>
+
+                <div class="col my-4">
+                  <h4>Ad Format</h4>
+                  <p>
+                    <small>Specify the Facebook page that your ads will be associated with.</small>
+                  </p>
+                </div>
+
+                <!-- <div class="col my-2">
+                  <h4>Logo</h4>
+                  <input type="file" name="logo" class="filepond">
+                </div> -->
+
+                <div class="col my-4 form-group">
+                  <h4>Advertiser Info</h4>
+                </div>
+
+                <div class="col my-4">
+                  <input type="text" name="adInfo" class="form-control p-4" placeholder="Facebook Page Name" style="width: 100%; border-radius: 25px;">
+                </div>
+
+                <div class="col my-4 form-group">
+                  <h4>Ad Title</h4>
+                </div>
+
+                <div class="col my-4">
+                  <input type="text" name="adTitle" class="form-control p-4" placeholder="Enter your text here" style="width: 100%; border-radius: 25px;">
+                </div>
+
+                <div class="col my-4 form-group">
+                  <h4>Ad Main Message</h4>
+                </div>
+
+                <div class="col">
+                  <textarea name="message" class="form-control col p-4" rows="8" placeholder="Enter your text here" style="width: 100%; border-radius: 25px"></textarea>
+                </div>
+
+                <div class="col my-4 form-group">
+                  <h4>Ad Creative</h4>
+                </div>
+
+                <div class="col my-4 form-group">
+                  <input type="file" name="banner" class="filepond">
+                </div>
+
+                <div class="col my-4">
+                  <h4>Ad Type</h4>
+                  <select class="form-control form-control-lg px-3" style="border-radius: 25px;">
+                    <option>None</option>
+                    <option>Learn More</option>
+                    <option>Apply Now</option>
+                  </select>
+                </div>
+
+                <div class="col my-2 form-group">
+                  <h4>Link Info</h4>
+                </div>
+                <div class="col my-4">
+                  <input type="text" name="headLine" id="headLine" class="form-control p-4" placeholder="Enter Headline" style="width: 100%; border-radius: 25px;" >
+                </div>
+
+                <div class="col my-4">
+                  <input type="text" name="description" id="description" class="form-control p-4" placeholder="Enter Description" style="width: 100%; border-radius: 25px;" >
+                </div>
+
+                <div class="col my-4">
+                  <input type="text" name="caption" id="caption" class="form-control p-4" placeholder="Enter Caption" style="width: 100%; border-radius: 25px;" >
+                </div>
+
+                <div class="col my-4">
+                  <h4>Reactions</h4>
+                </div>
+
+                <div class="row p-4">
+                  <div class="card col border rounded mx-3 p-0">
+                    <div class="card-header">
+                      <div class="card-title text-center m-0">
+                        Like
+                      </div>
+                    </div>
+                    <div class="card-body bg-white" style="display: flex;">
+                      <div class="center bg-ligth" style="vertical-align: middle; margin: auto;">
+                        <img src="images/like.svg">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card col border rounded mx-3 p-0">
+                    <div class="card-header">
+                      <div class="card-title text-center m-0">
+                        Heart
+                      </div>
+                    </div>
+                    <div class="card-body bg-white" style="display: flex;">
+                      <div class="center bg-ligth" style="vertical-align: middle; margin: auto;">
+                        <img src="images/heart.svg">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card col border rounded mx-3 p-0">
+                    <div class="card-header">
+                      <div class="card-title text-center m-0">
+                        Laugh
+                      </div>
+                    </div>
+                    <div class="card-body bg-white" style="display: flex;">
+                      <div class="center bg-ligth" style="vertical-align: middle; margin: auto;">
+                        <img src="images/haha.svg">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row p-4">
+                  <div class="card col border rounded mx-3 p-0">
+                    <div class="card-header">
+                      <div class="card-title text-center m-0">
+                        Wow
+                      </div>
+                    </div>
+                    <div class="card-body bg-white" style="display: flex;">
+                      <div class="center bg-ligth" style="vertical-align: middle; margin: auto;">
+                        <img src="images/wow.svg">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card col border rounded mx-3 p-0">
+                    <div class="card-header">
+                      <div class="card-title text-center m-0">
+                        Sad
+                      </div>
+                    </div>
+                    <div class="card-body bg-white" style="display: flex;">
+                      <div class="center bg-ligth" style="vertical-align: middle; margin: auto;">
+                        <img src="images/sad.svg">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card col border rounded mx-3 p-0">
+                    <div class="card-header">
+                      <div class="card-title text-center m-0">
+                        Angry
+                      </div>
+                    </div>
+                    <div class="card-body bg-white" style="display: flex;">
+                      <div class="center bg-ligth" style="vertical-align: middle; margin: auto;">
+                        <img src="images/angry.svg">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col my-4">
+                  <input type="text" name="reaction-counts" id="reactionCounts" class="form-control p-4" placeholder="Reaction Count (eg. 156)" style="width: 100%; border-radius: 25px;" >
+                </div>
+
+                <div class="col my-4">
+                  <input type="text" name="page-share" id="pageShare" class="form-control p-4" placeholder="Page Shares (eg. 156)" style="width: 100%; border-radius: 25px;" >
+                </div>
+
+                <div class="col my-4">
+                  <input type="text" name="page-comments" id="pageComments" class="form-control p-4" placeholder="Page Comments (eg. 156)" style="width: 100%; border-radius: 25px;" >
+                </div>
+
+                <div class="col my-4">
+                  <button type="button" name="resetButton" class="btn btn-md p-2 btn-primary btn-block" id="resetButton" style="border-radius: 50px;">Clear all fields</button>
+                </div>
+
+                <div class="col my-4">
+                  <input type="submit" class="btn btn-md btn-info btn-block float-right" value="Save Mockup" name="submit" style="border-radius: 50px;">
+                </div>
+            </div>
+
+            <!-- <div class="container my-4">
+              <div class="row">
+                <div class="col">
+                  <input type="submit" class="btn btn-md btn-info float-right" value="Save Mockup" name="submit">
+                </div>
+              </div>
+            </div> -->
+          </form>
+        </div>
+
+        <%- include('../template/preview') -%>
+      </div>
+    </div>
+
+    <!-- add before </body> -->
+    <script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
+    <script src="https://unpkg.com/filepond-plugin-image-transform/dist/filepond-plugin-image-transform.js"></script>
+    <script src="https://unpkg.com/filepond-plugin-image-resize/dist/filepond-plugin-image-resize.js"></script>
+    <script src="https://unpkg.com/filepond-plugin-file-validate-size/dist/filepond-plugin-file-validate-size.js"></script>
+    <script src="https://unpkg.com/filepond-plugin-file-encode/dist/filepond-plugin-file-encode.js"></script>
+    <script src="https://unpkg.com/filepond/dist/filepond.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+
+    document.getElementById("resetButton").onclick = function() {
+      document.getElementById('adsForm').reset();
+    };
+
+    FilePond.registerPlugin(
+      FilePondPluginImagePreview,
+      FilePondPluginImageTransform,
+      FilePondPluginImageResize,
+      FilePondPluginFileEncode
+    );
+
+      // FilePond.setOptions({
+      //   stylePanelAspectRatio: 1 / 2
+      // });
+
+      const logoElement = document.querySelector('input[name="logo"]');
+      const bannerElement = document.querySelector('input[name="banner"]');
+
+      const logoInputFile = FilePond.create(logoElement, {
+        imageResizeTargetWidth: 100,
+        imageResizeTargetHeight: 75,
+        imageResizeMode: 'force',
+        onaddfile: (err, fileItem) => {
+          console.log("ON logo >>", err, fileItem.getMetadata('resize'));
+        },
+        //
+        // // add onpreparefile callback
+        onpreparefile: (fileItem, output) => {
+          // create a new image object
+          const logoImg = new Image();
+
+          // set the image source to the output of the Image Transform plugin
+          logoImg.src = URL.createObjectURL(output);
+
+          // add it to the DOM so we can see the result
+          document.getElementById('previewLogo').append(logoImg);
+        }
+
+      });
+
+      const bannerInputFile = FilePond.create( bannerElement, {
+        imageResizeTargetWidth: 890,
+        imageResizeTargetHeight: 150,
+        imageResizeMode: 'force',
+        onaddfile: (err, fileItem) => {
+          console.log("ON banner >>", err, fileItem.getMetadata('resize'));
+        },
+        onpreparefile: (fileItem, output) => {
+          // create a new image object
+          const bannerImg = new Image();
+
+          // set the image source to the output of the Image Transform plugin
+          bannerImg.src = URL.createObjectURL(output);
+
+          // add it to the DOM so we can see the result
+          document.getElementById('previewBanner').append(bannerImg);
+        }
+      });
+      FilePond.parse(document.body);
+    </script>
+  </body>
+</html>

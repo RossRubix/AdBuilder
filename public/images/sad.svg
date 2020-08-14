@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g id="Group_6123" data-name="Group 6123" transform="translate(0.328 0.058)">
+    <circle id="Ellipse_26" data-name="Ellipse 26" cx="24" cy="24" r="24" transform="translate(-0.328 -0.058)" fill="#fcdc6b"/>
+    <ellipse id="Ellipse_27" data-name="Ellipse 27" cx="3" cy="4" rx="3" ry="4" transform="translate(9.672 22.942)" fill="#201e1e"/>
+    <ellipse id="Ellipse_28" data-name="Ellipse 28" cx="3.5" cy="4" rx="3.5" ry="4" transform="translate(31.672 22.942)" fill="#201e1e"/>
+    <g id="Group_6102" data-name="Group 6102" transform="translate(7.658 18.735)">
+      <g id="Group_6101" data-name="Group 6101" transform="translate(0 0)">
+        <path id="Path_4738" data-name="Path 4738" d="M17168,1835.425a1.312,1.312,0,0,0,1.334,1.479c.506,0,2.057-.7,3.664.361.506.343.756,1.064,1.551,1.064a1.373,1.373,0,0,0,1.371-1.227c.072-.758-.541-1.263-.937-1.66a6.147,6.147,0,0,0-3.844-1.443h-.74C17169.064,1834.072,17168,1834.559,17168,1835.425Z" transform="translate(-17142.76 -1834)" fill="#201e1e" fill-rule="evenodd"/>
+        <path id="Path_4739" data-name="Path 4739" d="M15770.277,1838.33c1.335,0,1.354-2.147,4.529-1.57a2.82,2.82,0,0,0,.811.144,1.336,1.336,0,0,0,.326-2.616,5.016,5.016,0,0,0-1.443-.289h-.723a6.112,6.112,0,0,0-3.824,1.407c-.415.415-.992.866-.975,1.57A1.379,1.379,0,0,0,15770.277,1838.33Z" transform="translate(-15768.979 -1834)" fill="#201e1e" fill-rule="evenodd"/>
+      </g>
+    </g>
+    <path id="Path_4740" data-name="Path 4740" d="M16319,2826.833c0,.9.434,1.552,1.335,1.552a2.692,2.692,0,0,0,1.138-.487,7.272,7.272,0,0,1,6.963-.613c1.029.415,1.949,1.66,3.049.649a1.157,1.157,0,0,0,.379-1.028c0-.7-.469-.974-.883-1.263a9.04,9.04,0,0,0-5.25-1.642,10.888,10.888,0,0,0-5.648,1.606,4.5,4.5,0,0,0-.686.433A1.447,1.447,0,0,0,16319,2826.833Z" transform="translate(-16301.419 -2787.404)" fill="#201e1e" fill-rule="evenodd"/>
+    <path id="Path_4741" data-name="Path 4741" d="M17260.861,2779c.631,2.4,3.861,5.737,3.861,7.65a3.861,3.861,0,0,1-7.723,0C17257,2784.737,17260.248,2781.273,17260.861,2779Z" transform="translate(-17222.496 -2743.216)" fill="#6383c1"/>
+  </g>
+</svg>

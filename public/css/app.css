@@ -1,0 +1,16 @@
+/* adjust path as needed */
+@import url('../node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css');
+
+h3 {
+  color: red;
+}
+
+p {
+  font-size: 20px;
+  color: red;
+}
+
+select {
+  border-radius: 25px;
+  border-color: red;
+}

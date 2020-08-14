@@ -1,0 +1,13 @@
+<div class="container-fluid my-4">
+  <% if (shareUrls.length == 0) { %>
+  <h4 class="text-alert">No save ads yet</h4>
+  <% } else { %>
+  <h4 class="text-dark">Your Save Mockups</h4>
+  <% } %>
+  <% shareUrls.forEach(shareUrl => { %>
+    <a href="view/<%= shareUrl.pageHeader %>" class="text-capitalize list-group-item list-group-item-action">
+      <strong class="text-capitalize"><%= shareUrl.pageHeader %></strong>
+      <button type="button" name="shareTinyUrl" class="rounded btn btn-sm btn-dark float-right">Share</button>
+    </a>
+  <% }) %>
+</div>
